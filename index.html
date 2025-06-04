@@ -4,26 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Netshidzivhe Mulisa - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Netshidzivhe Mulisa</h1>
-    <p>Cybersecurity Analyst | Web Developer | IT Support</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <div class="overlay">
+    <div class="header-container">
+      
+      <img src="images/myimage.jpg" class="profile-img" alt="Netshidzivhe Mulisa" />
+      
+      <div class="header-text">
+        <h1>Netshidzivhe Mulisa</h1>
+        <p>Cybersecurity Analyst | Web Developer | IT Support</p>
+
+        <div class="nav-wrapper">
+          <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+          <nav id="main-menu">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <!-- ✅ Move button here -->
+          <div class="right-button">
+            <a href="work.html" class="btn">My Work</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+
 
   <section id="about">
     <h2>About Me</h2>
     <p>Computer Science graduate with hands-on experience in secure web development, IT support, and cybersecurity. Skilled in Python, JavaScript, and Firebase. Google Cybersecurity Certificate holder with a strong focus on secure coding and vulnerability assessment. Eager to contribute and grow in a tech-driven team.</p>
     <p><strong>Certifications:</strong></p>
     <ul>
-      <li>Google Cybersecurity Professional Certificate</li>
+  <li>
+    <a href="certificates/google-cybersecurity.pdf" target="_blank">
+    <img src="images/cybersecurity-badge.png" alt="Cybersecurity Badge" style="height: 80px; vertical-align: middle;">
+    Google Cybersecurity 
+   </a>
+  </li>
+  <li>
+     <a href="certificates/google-it-support.pdf" target="_blank">
+    <img src="images/it-support-badge.png" alt="IT Support Badge" style="height: 80px; vertical-align: middle;">
+    Google IT Support Professional 
+    </a>
+  </li>
       <li>Business Analysis & Process Management</li>
       <li>Build a Free Website with WordPress</li>
     </ul>
@@ -56,10 +93,75 @@
     <p>📞 +27 73 887 7472</p>
     <p>📧 <a href="mailto:netshidzivhe201@gmail.com">netshidzivhe201@gmail.com</a></p>
     <p>📍 0950, Sibasa, Thohoyandou, South Africa</p>
-    <p>🔗 <a href="https://www.linkedin.com/in/mulisa-netshidzivhe-429228204/" target="_blank">LinkedIn Profile</a></p>
+    <p>🔗 <a href="www.linkedin.com/in/mr-m-netshidzivhe-429228204" target="_blank">LinkedIn Profile</a></p>
     <p>🌐 <a href="https://netshidzivhe-9dfa8.web.app" target="_blank">Portfolio Web App</a></p>
   </section>
 
+
+  <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Contact Info -->
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p><i class="fas fa-phone"></i> +27 73 887 7472</p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:netshidzivhe201@gmail.com">netshidzivhe201@gmail.com</a></p>
+      <p><i class="fas fa-map-marker-alt"></i> 0950, Sibasa, Thohoyandou, South Africa</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <p><a href="#about">About</a></p>
+      <p><a href="#skills">Skills</a></p>
+      <p><a href="#projects">Projects</a></p>
+      <p><a href="work.html">My Work</a></p>
+      <p><a href="#contact">Contact</a></p>
+    </div>
+
+<!-- Social Media -->
+<div class="footer-section">
+  <h3>Connect</h3>
+  <p>
+    <a href="https://linkedin.com/in/mr-m-netshidzivhe-429228204" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </p>
+  <p>
+    <a href="https://netshidzivhe-9dfa8.web.app" target="_blank">
+      <i class="fas fa-globe"></i> Portfolio Web App
+    </a>
+  </p>
+  <p>
+    <a href="https://wa.me/27738877472" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp Me
+    </a>
+  </p>
+</div>
+
+
+  <!-- Bottom Line -->
+  <div class="footer-bottom">
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+    <p>&copy; <span id="year"></span> Netshidzivhe Mulisa. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Script for year -->
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+
+
   <script src="js/script.js"></script>
 </body>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("main-menu").classList.toggle("show");
+  }
+</script>
+
 </html>

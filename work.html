@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Work - Netshidzivhe Mulisa</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="overlay">
+    <div class="header-container">
+      <a href="index.html" class="btn">← Back to Home</a>
+      <div class="header-text">
+        <h1>My Work in Detail</h1>
+        <p>A showcase of my projects with images, descriptions, tools used, and outcomes.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="projects-showcase">
+
+  <!-- 📄 Data Leak Project -->
+  <div class="project-card">
+    <h3>Data Leak Worksheet – Access Control Analysis</h3>
+    <p><strong>Incident Summary:</strong></p>
+    <p>
+      A sales manager mistakenly shared access to an internal folder containing confidential documents. A sales team member later shared the link to that folder with an external business partner, who published it on social media, exposing sensitive information.
+    </p>
+    <p><strong>Security Principle:</strong> <em>Least Privilege (NIST SP 800-53: AC-6)</em></p>
+    <p>This incident highlights the importance of giving users only the minimum access necessary to perform their duties.</p>
+
+    <div class="responsive-iframe">
+      <iframe 
+        src="pdf/data-leak-worksheet.pdf" 
+        width="100%" 
+        height="500px">
+      </iframe>
+    </div>
+
+    <p style="margin-top: 10px;">
+      <a href="pdf/data-leak-worksheet.pdf" target="_blank" class="btn">
+        📄 View Full PDF Report
+      </a>
+    </p>
+  </div>
+
+  <!-- 📄 File Permissions Project -->
+  <div class="project-card">
+    <h3>File Permissions in Linux</h3>
+    <p><strong>Project Description:</strong></p>
+    <p>
+      In this project, I used Linux commands to check and change file and directory permissions. This helps to make sure only the right users can access or modify files, keeping the system secure.
+    </p>
+
+    <div class="responsive-iframe">
+      <iframe 
+        src="pdf/linux-file-permissions.pdf" 
+        width="100%" 
+        height="500px">
+      </iframe>
+    </div>
+
+    <p style="margin-top: 10px;">
+      <a href="pdf/linux-file-permissions.pdf" target="_blank" class="btn">
+        📄 View Full Project PDF
+      </a>
+    </p>
+  </div>
+
+  <!-- 📄 SQL Filtering Project -->
+  <div class="project-card">
+    <h3>Apply Filters to SQL Queries – Security Data Investigation</h3>
+    <p><strong>Project Description:</strong></p>
+    <p>
+      In this project, I applied SQL filters to investigate login attempts and employee data. I queried the <code>log_in_attempts</code> table for failed logins after hours, on specific dates, and outside of Mexico. I also queried the <code>employees</code> table to identify users by department and office location for system updates.
+    </p>
+
+    <div class="responsive-iframe">
+      <iframe 
+        src="pdf/sql-filtering-project.pdf" 
+        width="100%" 
+        height="500px">
+      </iframe>
+    </div>
+
+    <p style="margin-top: 10px;">
+      <a href="pdf/sql-filtering-project.pdf" target="_blank" class="btn">
+        📄 View Full PDF Report
+      </a>
+    </p>
+  </div>
+
+</section>
+
+</body>
+</html>
