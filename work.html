@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
 <header>
   <div class="overlay">
     <div class="header-container">
@@ -69,6 +68,7 @@
       </a>
     </p>
   </div>
+  
 
   <!-- 📄 SQL Filtering Project -->
   <div class="project-card">
@@ -92,6 +92,39 @@
       </a>
     </p>
   </div>
+
+ <!-- 📄 Python Allow List Project -->
+<div class="project-card">
+  <h3>Algorithm for File Updates in Python – IP Allow List Management</h3>
+
+  <p><strong>Project Description:</strong></p>
+  <p>
+    In this project, I created a Python program that automates updating a list of allowed IP addresses by removing restricted ones. The program reads the allow list from a file, compares it with a remove list, and updates the file to ensure only authorized IPs remain. This enhances access control and data security.
+  </p>
+
+  <p><strong>Process Overview:</strong></p>
+  <ul style="text-align: left;">
+    <li>✔️ Read the allow list file using <code>open()</code> and <code>with</code> for safe handling</li>
+    <li>✔️ Use <code>.read()</code> and <code>.split()</code> to get a list of IPs</li>
+    <li>✔️ Loop through the remove list and remove any matching IPs</li>
+    <li>✔️ Write the updated list back using <code>.join()</code></li>
+  </ul>
+
+  <div class="responsive-iframe">
+    <iframe 
+      src="pdf/ip-allowlist-python.pdf" 
+      width="100%" 
+      height="500px">
+    </iframe>
+  </div>
+
+  <p style="margin-top: 10px;">
+    <a href="pdf/ip-allowlist-python.pdf" target="_blank" class="btn">
+      📄 View Full PDF Report
+    </a>
+  </p>
+</div>
+
 
 </section>
 

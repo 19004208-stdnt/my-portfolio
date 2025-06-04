@@ -259,7 +259,7 @@ section {
 
 .btn {
   display: inline-block;
-  background-color: #44dc12;
+  background-color: #13141361;
   color: white;
   padding: 8px 16px;
   border-radius: 6px;
@@ -275,3 +275,87 @@ section {
 
 
 
+
+
+
+
+
+/* 🔘 Dark Mode Toggle Switch */
+.dark-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.dark-switch input {
+  display: none;
+}
+
+.dark-switch .slider {
+  width: 50px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 34px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.dark-switch .slider::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 2px;
+  top: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.dark-switch input:checked + .slider {
+  background-color: #44dc12;
+}
+
+.dark-switch input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+body.dark-mode {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+}
+
+body.dark-mode .blog-card {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+body.dark-mode .blog-card p {
+  color: #ccc;
+}
+
+body.dark-mode .btn {
+  background-color: #44dc12;
+  color: white;
+}
+
+body.dark-mode .header-text h1,
+body.dark-mode .header-text p {
+  color: white;
+}
+
+body.dark-mode .footer {
+  background-color: #111;
+}
+/* Global link styles for dark mode */
+body.dark-mode a {
+  color: #44dc12; /* or any bright color that fits your theme */
+}
+
+body.dark-mode a:hover {
+  text-decoration: underline;
+  color: #6df944; /* a lighter green for hover */
+}

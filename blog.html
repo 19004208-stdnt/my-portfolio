@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – Netshidzivhe Mulisa</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      position: relative;
+      overflow: hidden;
+      color: white;
+      padding: 10px 20px;
+      background: #44dc12;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .header-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .header-text h1 {
+      margin-bottom: 10px;
+    }
+
+    .header-text p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #fff;
+      color: #44dc12;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e0e0e0;
+    }
+
+    .blog {
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .blog h2 {
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .blog-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      max-width: 700px;
+      margin: 20px auto;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .blog-card h3 {
+      color: #44dc12;
+      margin-bottom: 10px;
+    }
+
+    .blog-card p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .footer {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #44dc12;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="overlay">
+    <div class="header-container">
+      <a href="index.html" class="btn">← Back to Home</a>
+      <div class="header-text">
+        <h1>📝 My Blog</h1>
+        <p>Insights from projects, cybersecurity concepts, and coding walkthroughs.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="blog">
+  <h2>📝 Blog Posts</h2>
+
+  <div class="blog-card">
+    <h3>How I Automated IP Blocklists in Python</h3>
+    <p>Learn how I built a Python script to manage firewall rules using simple file logic...</p>
+    <a href="#" class="btn">Read More</a>
+  </div>
+
+  <div class="blog-card">
+    <h3>What is Least Privilege? (NIST AC-6 Explained)</h3>
+    <p>I break down a real-world data leak and how role-based access could have prevented it...</p>
+    <a href="#" class="btn">Read More</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Netshidzivhe Mulisa. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
