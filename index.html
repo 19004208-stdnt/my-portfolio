@@ -59,54 +59,156 @@
   <section id="about">
     <h2>About Me</h2>
     <p>Computer Science graduate with hands-on experience in secure web development, IT support, and cybersecurity. Skilled in Python, JavaScript, and Firebase. Google Cybersecurity Certificate holder with a strong focus on secure coding and vulnerability assessment. Eager to contribute and grow in a tech-driven team.</p>
-    <p><strong>Certifications:</strong></p>
-    <ul>
-  <li>
+    <div class="section-divider"></div>
+    <div class="section-heading">
+  <h2><i class="fas fa-graduation-cap"></i> Certifications</h2>
+</div>
+
+
+<div class="certifications">
+  <div class="cert-card">
     <a href="certificates/google-cybersecurity.pdf" target="_blank">
-    <img src="images/cybersecurity-badge.png" alt="Cybersecurity Badge" style="height: 80px; vertical-align: middle;">
-    Google Cybersecurity 
-   </a>
-  </li>
-  <li>
-     <a href="certificates/google-it-support.pdf" target="_blank">
-    <img src="images/it-support-badge.png" alt="IT Support Badge" style="height: 80px; vertical-align: middle;">
-    Google IT Support Professional 
+      <img src="images/cybersecurity-badge.png" alt="Cybersecurity Badge">
+      <p>Google Cybersecurity Certificate</p>
     </a>
-  </li>
-      <li>Business Analysis & Process Management</li>
-      <li>Build a Free Website with WordPress</li>
-    </ul>
-    <p><strong>Education:</strong> BSc in Computer Science (Feb 2021 - Nov 2024), University of Venda</p>
-  </section>
+  </div>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming:</strong> Python, JavaScript, SQL, JAVA, C++, C#</li>
-      <li><strong>Web Development:</strong> HTML, CSS, Firebase, WordPress, React.js, REST APIs</li>
-      <li><strong>Security Tools:</strong> Firewalls, IDS/IPS, Secure Coding</li>
-      <li><strong>Cloud & DevOps:</strong> Git, GitHub, Docker (basics), GCP, CI/CD</li>
-      <li><strong>Other:</strong> Linux, Database Security, Network Troubleshooting</li>
-      <li><strong>Soft Skills:</strong> Problem Solving, Teamwork, Communication, Critical Thinking, Time Management</li>
-    </ul>
-  </section>
+  <div class="cert-card">
+    <a href="certificates/google-it-support.pdf" target="_blank">
+      <img src="images/it-support-badge.png" alt="IT Support Badge">
+      <p>Google IT Support Certificate</p>
+    </a>
+  </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong><a href="https://myunivan.web.app" target="_blank">MyUnivan</a></strong> – A secure web application for university students, with authentication and database security.</li>
-      <li><strong><a href="https://proprojectassist.com" target="_blank">ProProjectAssist</a></strong> – A platform to assist students with project development, secure transactions, and feedback.</li>
-      <li><strong>Vulnerability Testing</strong> – Conducted assessments to enhance the security of personal and client web apps.</li>
-    </ul>
+  <div class="cert-card">
+    <i class="fas fa-certificate cert-icon"></i>
+    <p>Business Analysis & Process Management</p>
+  </div>
+
+  <div class="cert-card">
+    <i class="fas fa-certificate cert-icon"></i>
+    <p>Build a Free Website with WordPress</p>
+  </div>
+</div>
+
+    <div class="education-card">
+  <i class="fas fa-university edu-icon"></i>
+  <div class="edu-info">
+    <h3>BSc in Computer Science</h3>
+    <p><strong>Duration:</strong> Feb 2021 – Nov 2024</p>
+    <p><strong>Institution:</strong> University of Venda</p>
+  </div>
+</div>
+
   </section>
+<hr>
+
+
+ 
+   
+<section id="skills">
+  <h2><i class="fas fa-tools"></i> Skills</h2>
+
+  <div class="skills-tabs">
+    <div class="tab" onclick="showSkills('programming')"><i class="fas fa-code"></i> Programming</div>
+    <div class="tab" onclick="showSkills('web')"><i class="fas fa-globe"></i> Web Dev</div>
+    <div class="tab" onclick="showSkills('security')"><i class="fas fa-shield-alt"></i> Security</div>
+    <div class="tab" onclick="showSkills('cloud')"><i class="fas fa-cloud"></i> DevOps</div>
+    <div class="tab" onclick="showSkills('other')"><i class="fas fa-wrench"></i> Other</div>
+    <div class="tab" onclick="showSkills('soft')"><i class="fas fa-user-check"></i> Soft Skills</div>
+  </div>
+
+  <div class="skills-dropdown" id="programming">
+    <ul>
+      <li>🐍 Python</li>
+      <li>☕ Java</li>
+      <li>📜 JavaScript</li>
+      <li>🧠 SQL</li>
+      <li>💻 C++</li>
+      <li>#️⃣ C#</li>
+    </ul>
+  </div>
+
+  <div class="skills-dropdown" id="web">
+    <ul>
+      <li>🌐 HTML</li>
+      <li>🎨 CSS</li>
+      <li>🔥 Firebase</li>
+      <li>🧩 WordPress</li>
+      <li>⚛ React.js</li>
+      <li>🔗 REST APIs</li>
+    </ul>
+  </div>
+
+  <div class="skills-dropdown" id="security">
+    <ul>
+      <li>🔥 Firewalls</li>
+      <li>🕵️ IDS / IPS</li>
+      <li>🧪 Secure Coding</li>
+    </ul>
+  </div>
+
+  <div class="skills-dropdown" id="cloud">
+    <ul>
+      <li>🐙 Git / GitHub</li>
+      <li>🐳 Docker (Basics)</li>
+      <li>☁ GCP</li>
+      <li>🔁 CI/CD</li>
+    </ul>
+  </div>
+
+  <div class="skills-dropdown" id="other">
+    <ul>
+      <li>🐧 Linux</li>
+      <li>🛡 Database Security</li>
+      <li>🔌 Network Troubleshooting</li>
+    </ul>
+  </div>
+
+  <div class="skills-dropdown" id="soft">
+    <ul>
+      <li>🧠 Problem Solving</li>
+      <li>🤝 Teamwork</li>
+      <li>🗣 Communication</li>
+      <li>🧐 Critical Thinking</li>
+      <li>⏳ Time Management</li>
+    </ul>
+  </div>
+</section>
+
+
+
+<hr>
+<section id="projects-strip">
+  <h2><i class="fas fa-laptop-code"></i> Projects Overview</h2>
+
+  <div class="project-strip">
+
+    <div class="project-box">
+      <h3>MyUnivan</h3>
+      <p>Student portal with Firebase authentication.</p>
+      <a href="https://myunivan.web.app" target="_blank" class="project-link">🔗 View</a>
+    </div>
+
+    <div class="project-box">
+      <h3>ProProjectAssist</h3>
+      <p>Student project request and delivery platform.</p>
+      <a href="https://proprojectassist.com" target="_blank" class="project-link">🔗 Visit</a>
+    </div>
+
+    <div class="project-box">
+      <h3>Vulnerability Testing</h3>
+      <p>Security checks using OWASP standards.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>📞 +27 73 887 7472</p>
-    <p>📧 <a href="mailto:netshidzivhe201@gmail.com">netshidzivhe201@gmail.com</a></p>
-    <p>📍 0950, Sibasa, Thohoyandou, South Africa</p>
-    <p>🔗 <a href="www.linkedin.com/in/mr-m-netshidzivhe-429228204" target="_blank">LinkedIn Profile</a></p>
-    <p>🌐 <a href="https://netshidzivhe-9dfa8.web.app" target="_blank">Portfolio Web App</a></p>
+
   </section>
 
 
@@ -148,7 +250,12 @@
     <a href="https://wa.me/27738877472" target="_blank">
       <i class="fab fa-whatsapp"></i> WhatsApp Me
     </a>
-  </p>
+<p>
+  <a href="blog.html" target="_blank">
+    <i class="fas fa-blog"></i> Blog
+  </a>
+</p>
+
 </div>
 
 
@@ -186,6 +293,24 @@
           });
 
   </script>
+
+
+<script>
+  function showSkills(id) {
+    // Hide all skill dropdowns
+    const sections = document.querySelectorAll('.skills-dropdown');
+    sections.forEach(sec => sec.style.display = 'none');
+
+    // Show selected one
+    document.getElementById(id).style.display = 'block';
+  }
+
+  // Optional: show one by default
+  window.onload = function() {
+    showSkills('programming');
+  };
+</script>
+
   
 </body>
 

@@ -126,16 +126,119 @@
   <h2>📝 Blog Posts</h2>
 
   <div class="blog-card">
-    <h3>How I Automated IP Blocklists in Python</h3>
-    <p>Learn how I built a Python script to manage firewall rules using simple file logic...</p>
-    <a href="#" class="btn">Read More</a>
-  </div>
+  <h3>🔐 How I Automated IP Blocklists in Python</h3>
 
-  <div class="blog-card">
-    <h3>What is Least Privilege? (NIST AC-6 Explained)</h3>
-    <p>I break down a real-world data leak and how role-based access could have prevented it...</p>
-    <a href="#" class="btn">Read More</a>
-  </div>
+  <p><strong>Published:</strong> February 2025</p>
+
+  <p>
+    In one of my recent cybersecurity practice tasks, I was given a scenario: maintain a list of IP addresses that are allowed to access a secure system. Occasionally, some of those IPs must be removed from the list for security reasons — maybe due to expired access, policy changes, or suspicious activity. This gave me the perfect chance to build a practical Python script that mimics real-world firewall management.
+  </p>
+
+  <h4>🚩 The Problem</h4>
+  <p>
+    Manually editing access lists is risky. Mistakes happen, and as the list grows, it becomes harder to manage. I needed a way to:
+  </p>
+  <ul style="text-align: left;">
+    <li>Read an existing list of allowed IP addresses from a file</li>
+    <li>Compare it with a “remove list” of IPs to be blocked</li>
+    <li>Update the original file so only valid IPs remain</li>
+  </ul>
+
+  <h4>⚙️ The Python Solution</h4>
+  <p>
+    I used the `open()` function to read files safely and Python list methods to filter the IPs. Here’s a simplified version of my approach:
+  </p>
+
+  <pre style="background:#eee; padding: 10px; text-align: left; border-radius: 6px; overflow-x: auto;">
+import_file = "allow_list.txt"
+remove_list = ["192.168.0.101", "192.168.0.105"]
+
+with open(import_file, "r") as file:
+    ip_addresses = file.read().splitlines()
+
+for ip in remove_list:
+    if ip in ip_addresses:
+        ip_addresses.remove(ip)
+
+with open(import_file, "w") as file:
+    file.write("\n".join(ip_addresses))
+  </pre>
+
+  <p>
+    This script ensures that only authorized IPs remain on the allowlist — automatically and consistently.
+  </p>
+
+  <h4>🧠 What I Learned</h4>
+  <p>
+    The best part of this task was realizing how much **basic scripting** can help reduce **human error** in cybersecurity. I also practiced working with files, loops, and list operations — foundational skills for automation.
+  </p>
+
+  <h4>🔒 Security Takeaway</h4>
+  <p>
+    In real-world cybersecurity, **automation** and **principle of least privilege** go hand-in-hand. This kind of script would be useful in a system where dynamic access is granted and revoked regularly — especially in cloud or enterprise environments.
+  </p>
+
+  <p style="margin-top: 15px;">
+    <a href="pdf/ip-allowlist-python.pdf" target="_blank" class="btn">
+      📄 View Full Project PDF
+    </a>
+  </p>
+</div>
+
+<div class="blog-card">
+  <h3>🔐 What is Least Privilege? (NIST AC-6 Explained)</h3>
+
+  <p><strong>Published:</strong> August 2024</p>
+
+  <p>
+    While studying real-world cybersecurity case studies, I came across an incident involving a major data leak caused by simple human error and poor access management. It made me reflect on one of the most overlooked — yet powerful — cybersecurity principles: <strong>least privilege</strong>.
+  </p>
+
+  <h4>🕵️ The Real-World Scenario</h4>
+  <p>
+    A sales manager shared an internal folder containing confidential files with their team during a product strategy meeting. After the meeting, they forgot to revoke access to that folder. Later, a sales rep accidentally shared a link to the entire folder — thinking they were sharing only the promotional materials — with a business partner.
+  </p>
+  <p>
+    That partner, unaware of the sensitivity, posted the folder publicly on social media. The damage was done: internal strategy, unreleased product details, and customer analytics were all exposed.
+  </p>
+
+  <h4>💡 How It Could Have Been Prevented</h4>
+  <p>
+    This incident could have been avoided if the organization had enforced the <strong>principle of least privilege</strong>. This principle means users should only have the **minimum access** needed to do their jobs — and no more.
+  </p>
+
+  <h4>🔍 The Role of NIST SP 800-53: AC-6</h4>
+  <p>
+    According to <strong>NIST SP 800-53</strong>, control AC-6 enforces least privilege by recommending:
+  </p>
+  <ul style="text-align: left;">
+    <li>Granting access based on user roles (Role-Based Access Control)</li>
+    <li>Automatically revoking access after a specific time</li>
+    <li>Keeping logs of user actions for accountability</li>
+    <li>Regularly auditing access permissions</li>
+  </ul>
+
+  <p>
+    Had the team implemented automatic expiration or limited folder access to only necessary documents, the leak likely wouldn't have occurred.
+  </p>
+
+  <h4>🎯 My Reflection</h4>
+  <p>
+    Studying this case reminded me why I care about cybersecurity. It's not just about fancy tools or firewalls — it's about <strong>thinking critically and planning access wisely</strong>. This principle is simple, powerful, and essential for anyone managing data.
+  </p>
+
+  <h4>📘 Bonus: What You Can Do</h4>
+  <p>
+    If you're working with shared data, consider using access expiration, folder-specific permissions, and activity logs — even in smaller teams or academic projects.
+  </p>
+
+  <p style="margin-top: 15px;">
+    <a href="pdf/data-leak-worksheet.pdf" target="_blank" class="btn">
+      📄 View Full PDF Report
+    </a>
+  </p>
+</div>
+
 </section>
 
 <footer class="footer">
