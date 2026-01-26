@@ -113,20 +113,33 @@
 
   <div class="experience-card"
        style="
-         background-color: #2a2a2a;
-         color: #ffffff;
+         display:flex;
+         justify-content: space-between;
+         gap:20px;
+         background-color:#2a2a2a;
+         color:#ffffff;
+         padding:20px;
+         border-radius:14px;
+         box-shadow:0 10px 25px rgba(0,0,0,0.4);
+         align-items:flex-start;
        ">
 
-    <i class="fas fa-network-wired exp-icon"
-       style="color:#44dc12;"></i>
+    <!-- LEFT CONTENT -->
+    <div class="exp-info" style="flex:1;">
+      <i class="fas fa-network-wired exp-icon"
+         style="
+           color:#44dc12;
+           font-size:2rem;
+           margin-bottom:8px;
+           display:block;
+         "></i>
 
-    <div class="exp-info">
       <h3 style="color:#44dc12;">ICT Intern</h3>
 
       <p><strong>Institution:</strong> University of Venda (UNIVEN)</p>
       <p><strong>Duration:</strong> 2025 – 2026</p>
 
-      <ul>
+      <ul style="padding-left:18px;">
         <li>Provided IT support to staff and students (hardware & software troubleshooting)</li>
         <li>Installed, configured, and maintained computer systems and peripherals</li>
         <li>Assisted with network troubleshooting (LAN, connectivity issues)</li>
@@ -135,8 +148,28 @@
         <li>Worked with senior IT staff to resolve escalated technical issues</li>
       </ul>
     </div>
+
+    <!-- RIGHT IMAGE -->
+    <div style="
+         flex-shrink:0;
+         display:flex;
+         align-items:center;
+       ">
+      <img src="images/ict-myimage.png"
+           alt="ICT Intern"
+           style="
+             width:110px;
+             height:140px;
+             object-fit:cover;
+             border-radius:12px;
+             border:2px solid #44dc12;
+             box-shadow:0 6px 15px rgba(0,0,0,0.6);
+           ">
+    </div>
+
   </div>
 </section>
+
 
 
 
