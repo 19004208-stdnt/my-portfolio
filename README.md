@@ -19,6 +19,13 @@
 - 🧮 SQL Filter Security Audit
 - 📜 Python IP Allowlist Automation
 
+![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=19004208-stdnt&theme=tokyo-night)
+
 ## 🔗 Connect with Me
 [LinkedIn](https://linkedin.com/in/mr-m-netshidzivhe-429228204) | [WhatsApp Me](https://wa.me/27738877472)
+## 📫 Connect With Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Netshidzivhe%20Mulisa-blue?logo=linkedin)](https://linkedin.com/in/mr-m-netshidzivhe-429228204)
+
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-Message%20Me-green?logo=whatsapp)](https://wa.me/27738877472)
 
