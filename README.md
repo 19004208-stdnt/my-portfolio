@@ -5,7 +5,9 @@
 🚀 Cybersecurity Analyst | Web Developer | IT Support  
 🎓 BSc Computer Science, University of Venda  
 📜 ITIL Foundation V4 – IT Service Management (University of Venda)
-📜 Google IT Support & Cybersecurity Certificates  
+📜 Google IT Support & Cybersecurity Certificates 
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=19004208-stdnt&layout=compact&theme=tokyonight)
 
 ## 📁 Portfolio
 👉 [Live Portfolio Website](https://19004208-stdnt.github.io/my-portfolio/)
@@ -19,10 +21,20 @@
 - 🧮 SQL Filter Security Audit
 - 📜 Python IP Allowlist Automation
 
+  ## 💼 Work Experience
+
+**ICT Intern**  
+University of Venda – ICT Department  
+July 2025 – June 2026
+
+- Provided first-line IT support to staff and students
+- Assisted with Microsoft 365 support (Outlook, Teams, OneDrive)
+- Performed hardware and software troubleshooting
+- Assisted with LAN connectivity and network issues
+
 ![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=19004208-stdnt&theme=tokyo-night)
 
-## 🔗 Connect with Me
-[LinkedIn](https://linkedin.com/in/mr-m-netshidzivhe-429228204) | [WhatsApp Me](https://wa.me/27738877472)
+
 ## 📫 Connect With Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Netshidzivhe%20Mulisa-blue?logo=linkedin)](https://linkedin.com/in/mr-m-netshidzivhe-429228204)
