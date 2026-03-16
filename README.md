@@ -4,6 +4,7 @@
 
 🚀 Cybersecurity Analyst | Web Developer | IT Support  
 🎓 BSc Computer Science, University of Venda  
+📜 ITIL Foundation V4 – IT Service Management (University of Venda)
 📜 Google IT Support & Cybersecurity Certificates  
 
 ## 📁 Portfolio
